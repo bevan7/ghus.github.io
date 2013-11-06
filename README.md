@@ -103,4 +103,4 @@ Ways to work around it:
 
 1. Do only show login/avatar at first, and load details en demand when the visitor clicks on it.
 2. Make the visitor sign in with his GitHub account, to bump the rate to 5000 / hour
-3. <YOUR IDEA HERE>
+3. `<YOUR IDEA HERE>`
