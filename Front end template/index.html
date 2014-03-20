@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8' />
+	<title></title>
+	
+	<!-- temporary hardcoded style sheet as I couldn't figure out how to add a theme -->
+	<link rel="stylesheet" href="assets/css/default.css">
+
+	</head>
+<body>
+
+	<div class="content">
+	
+		
+		<!-- EXPLANATION -->
+		<section id="explanation">
+			<div class="common-margin">
+				<p>This site displays the members of a creative community by using <a href="https://github.com/">GitHub</a>.</p>
+			</div>
+		</section>
+		
+		<!-- HEADER -->
+		<header id="orgHeader">
+			<div class="common-margin">
+				<h1>{{ name }} <span id="community"></span></h1>
+				<a class="location" href="http://www.google.com/maps/place/{{ location }}">{{ location }}</a>
+				<a class="url" href="http://{{ url }}">{{ url }}</a>
+			</div>
+		</header>
+		
+		
+		
+		<!-- DESCRIPTION -->
+		<section id="orgDescription">
+			<div class="common-margin">
+				<h3>{{ description }}</h3>
+			</div>
+		</section>
+		
+		
+		
+		<!-- THE CORE TEAM -->
+		<section id="orgOwners">
+			<h2>The Core Team (4)</h2>
+			<div class="common-margin">
+				
+				<div id="ownersAvatars" data-template="coreMembers">
+					<a class="owner" href="https://github.com/{{github}}">
+						<img class="avatar" src="http://gravatar.com/avatar/{{gravatar}}?s=200">
+						<div class="tooltip" >
+							<span class="name">{{name}}</span>
+							<span class="role">{{role}}</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		<!-- THE COMMUNITY -->
+		<section id="orgMembers">
+			<div class="common-margin">
+				<h2>Our Community (12)</h2>
+				<div data-template="communityMembers">
+				<div class="member">
+				<a  href="https://github.com/{{github}}">
+					 <img class="avatar" src="http://gravatar.com/avatar/{{gravatar}}?s=200">
+					 <span class="name">{{name}}</span>
+					 <span class="role">{{role}}</span>
+				 </a>
+				</div>
+				</div>
+				<p class="submit">Add yourself to this list <br/> <a href="https://github.com/">Submit a pull request!</a></p>
+			</div>
+		</section>
+		
+		
+		
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="common-margin">
+				<p>
+				Find out how you can quickly
+				<a href="https://github.com/ghus/ghus.github.io">create a site for your own organisation</a>
+				and host it for free with <a href="http://pages.github.com/">GitHub Pages</a>.
+				</p>
+			</div>
+		</footer>
+		
+		
+			
+	</div>
+
+	<script src="http://ghus.github.io/assets/ghus.js"></script>
+	<script src="config.js"></script>
+</body>
+</html>
